@@ -9,7 +9,8 @@ const projects = [
     description:
       "Worked as a Front-end Developer and designed the UI for a web-based Learning Management System for students.",
     tags: ["React", "CSS", "UI Design"],
-    color: "from-primary/20 to-secondary/20",
+    gradient: "from-coral/30 via-peach/40 to-gold/20",
+    accentColor: "text-coral",
     link: "#",
   },
   {
@@ -17,7 +18,8 @@ const projects = [
     description:
       "I worked as a Front-end Developer for a women's safety website, while also designing its visual layout to create a user-friendly experience.",
     tags: ["HTML", "CSS", "JavaScript"],
-    color: "from-secondary/20 to-primary/20",
+    gradient: "from-lavender/30 via-primary/20 to-coral/20",
+    accentColor: "text-lavender",
     link: "#",
   },
   {
@@ -25,7 +27,8 @@ const projects = [
     description:
       "As a Front-end Developer, I designed a user-friendly interface for a web-based app aimed at helping farmers with weather updates and supplies.",
     tags: ["React", "API Integration", "UI/UX"],
-    color: "from-primary/20 to-gold-light/20",
+    gradient: "from-gold/30 via-peach/30 to-lavender/20",
+    accentColor: "text-gold",
     link: "#",
   },
 ];
@@ -35,7 +38,7 @@ const Projects = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="projects" className="py-24 bg-primary/5 relative">
+    <section id="projects" className="py-24 section-accent relative">
       <div className="container mx-auto px-6" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -43,7 +46,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-medium text-sm uppercase tracking-widest">
+          <span className="text-lavender font-medium text-sm uppercase tracking-widest">
             My Work
           </span>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mt-4">
@@ -61,18 +64,16 @@ const Projects = () => {
               key={project.title}
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+              transition={{ duration: 0.6, delay: 0.2 + index * 0.15 }}
               className="group"
             >
-              <div className="glass rounded-3xl overflow-hidden h-full flex flex-col hover:border-primary/50 transition-all duration-300">
+              <div className="glass rounded-3xl overflow-hidden h-full flex flex-col hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
                 {/* Project Image Placeholder */}
-                <div
-                  className={`h-48 bg-gradient-to-br ${project.color} flex items-center justify-center relative overflow-hidden`}
-                >
+                <div className={`h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
                   <div className="relative z-10 text-center">
                     <div className="w-16 h-16 mx-auto rounded-2xl bg-card/80 backdrop-blur flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-                      <span className="font-display text-2xl font-bold text-primary">
+                      <span className={`font-display text-2xl font-bold ${project.accentColor}`}>
                         {project.title.charAt(0)}
                       </span>
                     </div>
@@ -91,7 +92,7 @@ const Projects = () => {
 
                 {/* Content */}
                 <div className="p-6 flex-1 flex flex-col">
-                  <h3 className="font-display text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className={`font-display text-xl font-semibold mb-3 group-hover:${project.accentColor} transition-colors`}>
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground text-sm flex-1">
@@ -103,7 +104,7 @@ const Projects = () => {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs bg-muted px-3 py-1 rounded-full text-muted-foreground"
+                        className="text-xs bg-coral/10 text-coral px-3 py-1 rounded-full font-medium"
                       >
                         {tag}
                       </span>
