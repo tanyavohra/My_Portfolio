@@ -14,10 +14,10 @@ const projects = [
     link: "#",
   },
   {
-    title: "Durga - Women's Safety",
+    title: "Scholarly Student Community",
     description:
-      "I worked as a Front-end Developer for a women's safety website, while also designing its visual layout to create a user-friendly experience.",
-    tags: ["HTML", "CSS", "JavaScript"],
+      "Integrated Hugging Face API for AI-powered PDF interaction, built a community-driven Q&A system with tag-based organization, and developed a responsive UI using React.js, Node.js, Express and Python microservices.",
+    tags: ["React.js", "Node.js", "AI/ML", "Python"],
     gradient: "from-lavender/30 via-primary/20 to-coral/20",
     accentColor: "text-lavender",
     link: "#",
