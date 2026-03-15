@@ -1,28 +1,26 @@
 import { motion } from "framer-motion";
 import { Linkedin, Mail, ArrowDown, Sparkles } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
+import profileArt from "@/assets/profile-art.png";
 
 const Hero = () => {
   return (
     <section className="min-h-screen relative overflow-hidden flex items-center">
-      {/* Background Elements */}
+      {/* Background Image */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary/20 rounded-full blur-3xl" />
+        <img
+          src={heroBg}
+          alt=""
+          className="w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
       </div>
 
-      {/* Repeating Portfolio Text Background */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center overflow-hidden opacity-10 pointer-events-none select-none">
-        {[...Array(8)].map((_, i) => (
-          <motion.div
-            key={i}
-            initial={{ x: i % 2 === 0 ? -100 : 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: i * 0.1 }}
-            className="font-display text-6xl md:text-8xl font-bold whitespace-nowrap text-outline"
-          >
-            PORTFOLIO PORTFOLIO PORTFOLIO
-          </motion.div>
-        ))}
+      {/* Colorful floating orbs */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-coral/15 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-lavender/15 rounded-full blur-3xl animate-float" style={{ animationDelay: "2s" }} />
+        <div className="absolute top-1/2 right-1/3 w-48 h-48 bg-gold/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "4s" }} />
       </div>
 
       <div className="container mx-auto px-6 pt-24 pb-12 relative z-10">
@@ -34,9 +32,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-8"
           >
-            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
-              <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm text-primary font-medium">
+            <div className="inline-flex items-center gap-2 bg-coral/10 border border-coral/20 rounded-full px-4 py-2">
+              <Sparkles className="w-4 h-4 text-coral" />
+              <span className="text-sm text-coral font-medium">
                 Frontend Developer & Designer
               </span>
             </div>
@@ -58,13 +56,13 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4">
               <a
                 href="#contact"
-                className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium hover:bg-primary/90 transition-all hover:scale-105"
+                className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/25"
               >
                 Get in Touch
               </a>
               <a
                 href="#projects"
-                className="border border-border text-foreground px-8 py-4 rounded-full font-medium hover:bg-muted transition-all hover:scale-105"
+                className="border-2 border-coral/30 text-foreground px-8 py-4 rounded-full font-medium hover:bg-coral/10 transition-all hover:scale-105"
               >
                 View Projects
               </a>
@@ -91,7 +89,7 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Right Content - Profile Image */}
+          {/* Right Content - Profile Art */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -100,33 +98,30 @@ const Hero = () => {
           >
             <div className="relative">
               {/* Decorative Elements */}
-              <div className="absolute -top-8 -left-8 w-24 h-24 border-2 border-primary/30 rounded-full animate-float" />
+              <div className="absolute -top-8 -left-8 w-24 h-24 border-2 border-coral/40 rounded-full animate-float" />
               <div
-                className="absolute -bottom-4 -right-4 w-16 h-16 bg-primary/20 rounded-full animate-float"
+                className="absolute -bottom-4 -right-4 w-16 h-16 bg-lavender/30 rounded-full animate-float"
                 style={{ animationDelay: "2s" }}
               />
               <div
-                className="absolute top-1/2 -left-12 w-8 h-8 bg-secondary rounded-full animate-float"
+                className="absolute top-1/2 -left-12 w-8 h-8 bg-gold/40 rounded-full animate-float"
                 style={{ animationDelay: "1s" }}
               />
 
               {/* Image Container */}
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 p-1">
-                <div className="w-full h-full rounded-3xl bg-secondary overflow-hidden flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-gold-light flex items-center justify-center mb-4">
-                      <span className="font-display text-4xl text-primary-foreground font-bold">
-                        TV
-                      </span>
-                    </div>
-                    <p className="text-secondary-foreground/80 text-sm">
-                      Add your photo here
-                    </p>
-                  </div>
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden p-1"
+                style={{ background: "linear-gradient(135deg, hsl(var(--coral)), hsl(var(--lavender)), hsl(var(--gold)))" }}
+              >
+                <div className="w-full h-full rounded-3xl bg-peach/50 overflow-hidden flex items-center justify-center">
+                  <img
+                    src={profileArt}
+                    alt="Tanya Vohra - Creative Portrait"
+                    className="w-full h-full object-contain p-4"
+                  />
                 </div>
               </div>
 
-              {/* Info Cards */}
+              {/* Info Card */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
-          className="font-display text-2xl font-semibold text-foreground hover:text-primary transition-colors"
+          className="font-display text-2xl font-semibold text-gradient hover:opacity-80 transition-opacity"
         >
           Tanya Vohra
         </a>
@@ -51,7 +51,7 @@ const Navbar = () => {
           ))}
           <a
             href="#contact"
-            className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"
+            className="bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
           >
             Contact Me
           </a>
