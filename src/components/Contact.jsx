@@ -55,7 +55,7 @@ const Contact = () => {
               <p className="text-muted-foreground text-sm mb-4">
                 Get a copy of my resume to learn more about my experience.
               </p>
-              <a href="../assets/Resume-Tanya (1).pdf" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20" download>
+              <a href="public/Resume-Tanya (1).pdf" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20" download>
                 Download CV
                 <ArrowUpRight className="w-4 h-4"/>
               </a>
