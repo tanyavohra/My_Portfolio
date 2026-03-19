@@ -55,7 +55,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              “I’m Tanya Vohra, a Computer Science student at SKIT Jaipur, currently in my 4th semester. I’m a full-stack developer who enjoys building scalable and visually appealing web applications.
+              I’m Tanya Vohra, a Computer Science student at SKIT Jaipur, currently in my 6th semester. I’m a full-stack developer who enjoys building scalable and visually appealing web applications.
               I’ve worked with React, Node.js, and MongoDB, and I focus on creating clean, user-friendly interfaces along with efficient backend logic.
               Alongside development, I have a strong foundation in data structures and OOP, and I’m actively improving my problem-solving skills.
             </p>
