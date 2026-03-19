@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
@@ -9,6 +11,8 @@ const contactInfo = [
 ];
 
 const Contact = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
@@ -19,21 +23,31 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 section-accent">
+    <section id="contact" className="py-20 section-accent" ref={ref}>
       <div className="max-w-6xl mx-auto px-6">
 
-        <div className="text-center mb-12">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
           <p className="text-coral text-sm font-medium uppercase tracking-widest">Get in Touch</p>
           <h2 className="text-3xl md:text-5xl font-bold mt-3">
             Let's Work <span className="text-gradient">Together</span>
           </h2>
           <p className="text-muted-foreground mt-3">Have a project in mind or just want to say hi? Feel free to reach out!</p>
-        </div>
+        </motion.div>
 
         <div className="grid md:grid-cols-2 gap-10">
 
           {/* Contact Info */}
-          <div className="space-y-6">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="space-y-6"
+          >
             <div className="bg-card border border-border rounded-2xl p-6">
               <h3 className="text-xl font-bold mb-4">Contact Information</h3>
               <div className="space-y-3">
@@ -62,10 +76,15 @@ const Contact = () => {
                 Download CV ↗
               </a>
             </div>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div className="bg-card border border-border rounded-2xl p-6">
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={isInView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="bg-card border border-border rounded-2xl p-6"
+          >
             <h3 className="text-xl font-bold mb-4">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -108,7 +127,7 @@ const Contact = () => {
                 Send Message ✈️
               </button>
             </form>
-          </div>
+          </motion.div>
 
         </div>
       </div>
