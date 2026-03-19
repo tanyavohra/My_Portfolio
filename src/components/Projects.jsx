@@ -3,6 +3,12 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const projects = [
+    {
+    title: "Scholarly Student Community",
+    description:
+      "Integrated Hugging Face API for AI-powered PDF interaction, built a community-driven Q&A system with tag-based organization, and developed a responsive UI using React.js, Node.js, Express and Python microservices.",
+    tags: ["React.js", "Node.js", "AI", "Python"],
+  },
   {
     title: "LMS - Learning Management System",
     description:
@@ -10,16 +16,10 @@ const projects = [
     tags: ["React", "CSS", "UI Design"],
   },
   {
-    title: "Scholarly Student Community",
-    description:
-      "Integrated Hugging Face API for AI-powered PDF interaction, built a community-driven Q&A system with tag-based organization, and developed a responsive UI using React.js, Node.js, Express and Python microservices.",
-    tags: ["React.js", "Node.js", "AI/ML", "Python"],
-  },
-  {
     title: "SAHAAY - Farmer's Helper",
     description:
       "As a Front-end Developer, I designed a user-friendly interface for a web-based app aimed at helping farmers with weather updates and supplies.",
-    tags: ["React", "API Integration", "UI/UX"],
+    tags: ["React", "CSS", "UI/UX"],
   },
 ];
 const Projects = () => {
