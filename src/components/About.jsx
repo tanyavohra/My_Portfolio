@@ -36,16 +36,16 @@ const About = () => {
                 Pursuing B.Tech in Computer Science Engineering from Swami Keshwanand Institute of Technology and Gramothan, Jaipur
               </p>
             </div>
-
+            
+            <div className="bg-card border border-border rounded-2xl p-5">
+              <h3 className="font-bold text-lg mb-1">Full-Stack Developer</h3>
+              <p className="text-muted-foreground text-sm">Looking for opportunities</p>
+            </div>
             <div className="bg-card border border-border rounded-2xl p-5">
               <h3 className="font-bold text-lg mb-1">📍 Location</h3>
               <p className="text-muted-foreground text-sm">Based in Jagatpura, Jaipur, Rajasthan, India</p>
             </div>
 
-            <div className="bg-card border border-border rounded-2xl p-5">
-              <h3 className="font-bold text-lg mb-1">🎂 Birthday</h3>
-              <p className="text-muted-foreground text-sm">October 6, 2005</p>
-            </div>
           </motion.div>
 
           {/* Right - Description & Stats */}
