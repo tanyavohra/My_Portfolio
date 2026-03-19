@@ -1,143 +1,78 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
-import { Calendar, MapPin, GraduationCap } from "lucide-react";
 import creativeTools from "@/assets/creative-tools.png";
 
 const About = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  const stats = [
-    { label: "Projects Completed", value: "10+", color: "text-coral" },
-    { label: "Years Learning", value: "3+", color: "text-lavender" },
-    { label: "Technologies", value: "8+", color: "text-gold" },
-  ];
-
   return (
-    <section id="about" className="py-24 relative section-accent">
-      <div className="container mx-auto px-6" ref={ref}>
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <span className="text-coral font-medium text-sm uppercase tracking-widest">
-            About Me
-          </span>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mt-4">
-            Passionate About Creating
-            <br />
-            <span className="text-gradient">Beautiful Experiences</span>
+    <section id="about" className="py-20 section-accent">
+      <div className="max-w-6xl mx-auto px-6">
+
+        {/* Section Title */}
+        <div className="text-center mb-12">
+          <p className="text-coral text-sm font-medium uppercase tracking-widest">About Me</p>
+          <h2 className="text-3xl md:text-5xl font-bold mt-3">
+            Passionate About Creating <span className="text-gradient">Beautiful Experiences</span>
           </h2>
-        </motion.div>
+        </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+
           {/* Left - Info Cards */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="space-y-6"
-          >
-            <div className="glass rounded-2xl p-6 hover:border-coral/50 transition-colors group">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-coral/15 flex items-center justify-center flex-shrink-0 group-hover:bg-coral/25 transition-colors">
-                  <GraduationCap className="w-6 h-6 text-coral" />
-                </div>
-                <div>
-                  <h3 className="font-display text-xl font-semibold mb-2">Education</h3>
-                  <p className="text-muted-foreground">
-                    Pursuing B.Tech in Computer Science Engineering from Swami
-                    Keshwanand Institute of Technology and Gramothan, Jaipur
-                  </p>
-                </div>
-              </div>
+          <div className="space-y-5">
+            <div className="bg-card border border-border rounded-2xl p-5">
+              <h3 className="font-bold text-lg mb-1">🎓 Education</h3>
+              <p className="text-muted-foreground text-sm">
+                Pursuing B.Tech in Computer Science Engineering from Swami Keshwanand Institute of Technology and Gramothan, Jaipur
+              </p>
             </div>
 
-            <div className="glass rounded-2xl p-6 hover:border-lavender/50 transition-colors group">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-lavender/20 flex items-center justify-center flex-shrink-0 group-hover:bg-lavender/30 transition-colors">
-                  <MapPin className="w-6 h-6 text-lavender" />
-                </div>
-                <div>
-                  <h3 className="font-display text-xl font-semibold mb-2">Location</h3>
-                  <p className="text-muted-foreground">
-                    Based in Jagatpura, Jaipur, Rajasthan, India
-                  </p>
-                </div>
-              </div>
+            <div className="bg-card border border-border rounded-2xl p-5">
+              <h3 className="font-bold text-lg mb-1">📍 Location</h3>
+              <p className="text-muted-foreground text-sm">Based in Jagatpura, Jaipur, Rajasthan, India</p>
             </div>
 
-            <div className="glass rounded-2xl p-6 hover:border-gold/50 transition-colors group">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-gold/15 flex items-center justify-center flex-shrink-0 group-hover:bg-gold/25 transition-colors">
-                  <Calendar className="w-6 h-6 text-gold" />
-                </div>
-                <div>
-                  <h3 className="font-display text-xl font-semibold mb-2">Birthday</h3>
-                  <p className="text-muted-foreground">October 6, 2005</p>
-                </div>
-              </div>
+            <div className="bg-card border border-border rounded-2xl p-5">
+              <h3 className="font-bold text-lg mb-1">🎂 Birthday</h3>
+              <p className="text-muted-foreground text-sm">October 6, 2005</p>
             </div>
 
-            {/* Creative Tools Image */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="rounded-2xl overflow-hidden"
-            >
-              <img
-                src={creativeTools}
-                alt="Creative workspace with design tools"
-                className="w-full h-auto object-contain"
-                loading="lazy"
-              />
-            </motion.div>
-          </motion.div>
+            <img
+              src={creativeTools}
+              alt="Creative workspace"
+              className="w-full rounded-2xl"
+              loading="lazy"
+            />
+          </div>
 
-          {/* Right - Stats & Description */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="space-y-8"
-          >
-            <p className="text-lg text-muted-foreground leading-relaxed">
+          {/* Right - Description & Stats */}
+          <div>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               I am a Frontend Developer and a self-taught designer with a
               passion for creating visually appealing and user-friendly
               websites. My journey in web development has been driven by
               curiosity and a desire to bring creative ideas to life.
             </p>
-
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               I believe in the power of good design to communicate ideas
               effectively and create meaningful experiences. When I'm not
               coding, you'll find me exploring art, singing, or writing.
             </p>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-6">
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-                  className="text-center glass rounded-2xl p-4"
-                >
-                  <div className={`font-display text-3xl md:text-4xl font-bold ${stat.color}`}>
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    {stat.label}
-                  </div>
-                </motion.div>
-              ))}
+            <div className="grid grid-cols-3 gap-4">
+              <div className="bg-card border border-border rounded-2xl p-4 text-center">
+                <p className="text-3xl font-bold text-coral">10+</p>
+                <p className="text-sm text-muted-foreground mt-1">Projects</p>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-4 text-center">
+                <p className="text-3xl font-bold text-lavender">3+</p>
+                <p className="text-sm text-muted-foreground mt-1">Years Learning</p>
+              </div>
+              <div className="bg-card border border-border rounded-2xl p-4 text-center">
+                <p className="text-3xl font-bold text-gold">8+</p>
+                <p className="text-sm text-muted-foreground mt-1">Technologies</p>
+              </div>
             </div>
-          </motion.div>
+          </div>
+
         </div>
       </div>
     </section>
