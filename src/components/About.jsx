@@ -55,10 +55,12 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              I am a Frontend Developer and a self-taught designer with a passion for creating visually appealing and user-friendly websites. My journey in web development has been driven by curiosity and a desire to bring creative ideas to life.
+              “I’m Tanya Vohra, a Computer Science student at SKIT Jaipur, currently in my 4th semester. I’m a full-stack developer who enjoys building scalable and visually appealing web applications.
+              I’ve worked with React, Node.js, and MongoDB, and I focus on creating clean, user-friendly interfaces along with efficient backend logic.
+              Alongside development, I have a strong foundation in data structures and OOP, and I’m actively improving my problem-solving skills.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              I believe in the power of good design to communicate ideas effectively and create meaningful experiences. When I'm not coding, you'll find me exploring art, singing, or writing.
+              I’m looking for opportunities where I can contribute meaningfully, take ownership of features, and continue growing as a developer.
             </p>
 
             <div className="grid grid-cols-3 gap-4">
