@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import creativeTools from "@/assets/creative-tools.png";
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -47,8 +46,6 @@ const About = () => {
               <h3 className="font-bold text-lg mb-1">🎂 Birthday</h3>
               <p className="text-muted-foreground text-sm">October 6, 2005</p>
             </div>
-
-            <img src={creativeTools} alt="Creative workspace" className="w-full rounded-2xl" loading="lazy" />
           </motion.div>
 
           {/* Right - Description & Stats */}

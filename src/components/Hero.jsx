@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Linkedin, Mail, ArrowDown, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import profileArt from "@/assets/profile-art.png";
+import profileArt from "@/assets/pic1.jpeg";
 const Hero = () => {
     return (<section className="min-h-screen relative overflow-hidden flex items-center">
       {/* Background Image */}
@@ -36,7 +36,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              I am a Frontend Developer and a self-taught designer. I am
+              I am a Full-Stack Developer and a self-taught designer. I am
               inquisitive, creative and have a keen eye for making websites look
               appealing. Currently pursuing B.Tech in Computer Science
               Engineering from Swami Keshwanand Institute in Jaipur.
@@ -75,7 +75,7 @@ const Hero = () => {
               {/* Image Container */}
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden p-1" style={{ background: "linear-gradient(135deg, hsl(var(--coral)), hsl(var(--lavender)), hsl(var(--gold)))" }}>
                 <div className="w-full h-full rounded-3xl bg-peach/50 overflow-hidden flex items-center justify-center">
-                  <img src={profileArt} alt="Tanya Vohra - Creative Portrait" className="w-full h-full object-contain p-4"/>
+                  <img src={profileArt} alt="Tanya Vohra - Profile" className="w-full h-full object-contain p-4"/>
                 </div>
               </div>
 
