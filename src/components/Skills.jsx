@@ -3,12 +3,12 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code, Palette, Globe } from "lucide-react";
 const codingSkills = [
-    { name: "Data Structures & Algorithms", level: 80, color: "bg-coral" },
-    { name: "Computer Science Fundamentals", level: 70, color: "bg-coral" },
-    { name: "C++", level: 90, color: "bg-coral" },
-    { name: "Front-end : HTML + CSS + React.js", level: 85, color: "bg-lavender" },
-    { name: "Back-end : JS + Node.js + Express.js", level: 70, color: "bg-gold" },
-    { name: "Database : MongoDB", level: 60, color: "bg-primary" },
+  { name: "Computer Science Fundamentals", level: 70, color: "bg-coral" },
+   { name: "Data Structures & Algorithms", level: 80, color: "bg-coral" },
+    { name: "JS + Node.js + Express.js", level: 70, color: "bg-gold" },
+     { name: "HTML + CSS + React.js", level: 85, color: "bg-lavender" },
+        { name: "MongoDB", level: 60, color: "bg-primary" },
+    { name: "C++", level: 90, color: "bg-coral" }, 
 
 ];
 const softwareSkills = [
