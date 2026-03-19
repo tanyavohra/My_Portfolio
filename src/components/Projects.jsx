@@ -2,22 +2,26 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import scholarly from "src/assets/scholarly.jpeg";
-
+import sahaay from "src/assets/sahaay.jpeg";
+import lms from "src/assets/lms.jpeg";
 const projects = [
     {
     title: "Scholarly Student Community",
+    image:scholarly,
     description:
       "Integrated Hugging Face API for AI-powered PDF interaction, built a community-driven Q&A system with tag-based organization, and developed a responsive UI using React.js, Node.js, Express and Python microservices.",
     tags: ["React.js", "Node.js", "AI", "Python"],
   },
   {
     title: "LMS - Learning Management System",
+    image:lms,
     description:
       "Worked as a Front-end Developer and designed the UI for a web-based Learning Management System for students.",
     tags: ["React", "CSS", "UI Design"],
   },
   {
     title: "SAHAAY - Farmer's Helper",
+    image:sahaay,
     description:
       "As a Front-end Developer, I designed a user-friendly interface for a web-based app aimed at helping farmers with weather updates and supplies.",
     tags: ["React", "CSS", "UI/UX"],
@@ -56,7 +60,7 @@ const Projects = () => {
               className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-colors"
             >
               <div className="h-32 bg-gradient-to-br from-coral/20 via-lavender/20 to-gold/20 flex items-center justify-center">
-                <img src={scholarly} alt="S"></img>
+                <img src={project.image} alt={project.title} />
               </div>
 
               <div className="p-5">
