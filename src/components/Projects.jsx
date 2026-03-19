@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import scholarly from "src/assets/scholarly.jpeg";
-import sahaay from "src/assets/sahaay.jpeg";
-import lms from "src/assets/lms.jpeg";
+import scholarly from "../assets/scholarly.jpeg";
+import sahaay from "../assets/sahaay.jpeg";
+import lms from "../assets/lms.jpeg";
 const projects = [
     {
     title: "Scholarly Student Community",
