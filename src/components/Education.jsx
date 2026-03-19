@@ -5,9 +5,9 @@ import { GraduationCap, Award, Trophy, Star } from "lucide-react";
 const education = [
     {
         year: "2023 - Present",
-        title: "B.Tech in Computer Science",
+        title: "B.Tech in Computer Science - 8.85 CGPA",
         institution: "Swami Keshwanand Institute of Technology and Gramothan, Jaipur",
-        description: "Currently in II year, pursuing Bachelor of Technology in Computer Science",
+        description: "Currently in III year, pursuing Bachelor of Technology in Computer Science",
         icon: GraduationCap,
         current: true,
     },

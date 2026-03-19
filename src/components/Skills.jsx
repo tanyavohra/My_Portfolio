@@ -3,17 +3,20 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code, Palette, Globe } from "lucide-react";
 const codingSkills = [
-    { name: "HTML", level: 90, color: "bg-coral" },
-    { name: "CSS", level: 85, color: "bg-lavender" },
-    { name: "JavaScript", level: 80, color: "bg-gold" },
-    { name: "React.js", level: 75, color: "bg-primary" },
-    { name: "TypeScript", level: 70, color: "bg-coral" },
+    { name: "Data Structures & Algorithms", level: 80, color: "bg-coral" },
+    { name: "Computer Science Fundamentals", level: 70, color: "bg-coral" },
+    { name: "C++", level: 90, color: "bg-coral" },
+    { name: "Front-end : HTML + CSS + React.js", level: 85, color: "bg-lavender" },
+    { name: "Back-end : JS + Node.js + Express.js", level: 70, color: "bg-gold" },
+    { name: "Database : MongoDB", level: 60, color: "bg-primary" },
+
 ];
 const softwareSkills = [
+    { name: "Git", icon: "🔄", bg: "bg-primary/10" },
+    { name: "VS Code", icon: "💻", bg: "bg-gold/10" },
     { name: "Figma", icon: "🎨", bg: "bg-coral/10" },
     { name: "Canva", icon: "✨", bg: "bg-lavender/10" },
-    { name: "VS Code", icon: "💻", bg: "bg-gold/10" },
-    { name: "Git", icon: "🔄", bg: "bg-primary/10" },
+    
 ];
 const languages = [
     { name: "English", level: "Proficient", description: "Strong communication skills" },

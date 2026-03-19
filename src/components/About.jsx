@@ -63,7 +63,7 @@ const About = () => {
 
             <div className="grid grid-cols-3 gap-4">
               {[
-                { value: "10+", label: "Projects", color: "text-coral" },
+                { value: "4+", label: "Projects", color: "text-coral" },
                 { value: "3+", label: "Years Learning", color: "text-lavender" },
                 { value: "8+", label: "Technologies", color: "text-gold" },
               ].map((stat) => (
