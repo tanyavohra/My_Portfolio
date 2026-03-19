@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import scholarly from "@/assets/scholarly";
+import scholarly from "src/assets/scholarly.jpeg";
 
 const projects = [
     {
@@ -56,7 +56,7 @@ const Projects = () => {
               className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-colors"
             >
               <div className="h-32 bg-gradient-to-br from-coral/20 via-lavender/20 to-gold/20 flex items-center justify-center">
-                <img>{scholarly}</img>
+                <img src={scholarly} alt="S"></img>
               </div>
 
               <div className="p-5">
