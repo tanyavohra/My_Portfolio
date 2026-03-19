@@ -17,7 +17,7 @@ const Footer = () => {
             {[
             { icon: Linkedin, href: "https://linkedin.com/in/tanya-vohra", color: "hover:bg-lavender hover:text-primary-foreground" },
             { icon: Mail, href: "mailto:vohratanya5@gmail.com", color: "hover:bg-coral hover:text-primary-foreground" },
-            { icon: Github, href: "#", color: "hover:bg-gold hover:text-primary-foreground" },
+            { icon: Github, href: "https://github.com/tanyavohra", color: "hover:bg-gold hover:text-primary-foreground" },
         ].map(({ icon: Icon, href, color }) => (<a key={href} href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} className={`w-10 h-10 rounded-full bg-muted flex items-center justify-center ${color} transition-colors`}>
                 <Icon className="w-5 h-5"/>
               </a>))}

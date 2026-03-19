@@ -10,12 +10,8 @@ import Footer from "@/components/Footer";
 const Index = () => {
     return (<>
       <Helmet>
-        <title>Tanya Vohra | Frontend Developer & Designer</title>
-        <meta name="description" content="Portfolio of Tanya Vohra - Frontend Developer and self-taught designer passionate about creating beautiful, user-friendly web experiences."/>
-        <meta name="keywords" content="frontend developer, web developer, UI designer, React developer, portfolio, Tanya Vohra"/>
-        <meta property="og:title" content="Tanya Vohra | Frontend Developer & Designer"/>
-        <meta property="og:description" content="Frontend Developer and designer passionate about creating beautiful web experiences."/>
-        <meta property="og:type" content="website"/>
+        <title>Tanya Vohra | Full-Stack Developer & Designer</title>
+        <meta name="keywords" content="frontend developer,fullstack,fuul-stack,front-end web developer, UI designer, React developer, portfolio, Tanya Vohra"/>
         <link rel="canonical" href="https://tanyavohra.com"/>
       </Helmet>
 
