@@ -38,7 +38,7 @@ const About = () => {
             </div>
             
             <div className="bg-card border border-border rounded-2xl p-5">
-              <h3 className="font-bold text-lg mb-1">Full-Stack Developer</h3>
+              <h3 className="font-bold text-lg mb-1">👤Full-Stack Developer</h3>
               <p className="text-muted-foreground text-sm">Looking for opportunities</p>
             </div>
             <div className="bg-card border border-border rounded-2xl p-5">
