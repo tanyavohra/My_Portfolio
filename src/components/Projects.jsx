@@ -7,21 +7,21 @@ import lms from "../assets/lms.jpeg";
 const projects = [
     {
     title: "Scholarly Student Community",
-    image:scholarly,
+    image:scholarly,codeLink:"https://github.com/tanyavohra/Scholarly",
     description:
       "Integrated Hugging Face API for AI-powered PDF interaction, built a community-driven Q&A system with tag-based organization, and developed a responsive UI using React.js, Node.js, Express and Python microservices.",
     tags: ["React.js", "Node.js", "AI", "Python"],
   },
   {
     title: "LMS - Learning Management System",
-    image:lms,
+    image:lms,codeLink:"https://github.com/tanyavohra/LMS",
     description:
       "Worked as a Front-end Developer and designed the UI for a web-based Learning Management System for students.",
     tags: ["React", "CSS", "UI Design"],
   },
   {
     title: "SAHAAY - Farmer's Helper",
-    image:sahaay,
+    image:sahaay,codeLink:"#",
     description:
       "As a Front-end Developer, I designed a user-friendly interface for a web-based app aimed at helping farmers with weather updates and supplies.",
     tags: ["React", "CSS", "UI/UX"],
@@ -60,7 +60,11 @@ const Projects = () => {
               className="bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-colors"
             >
               <div className="h-32 bg-gradient-to-br from-coral/20 via-lavender/20 to-gold/20 flex items-center justify-center">
-                <img src={project.image} alt={project.title} />
+                  <img
+    src={project.image}
+    alt={project.title}
+    className="h-full w-full object-cover"
+  />
               </div>
 
               <div className="p-5">
@@ -76,8 +80,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4 pt-3 border-t border-border">
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary">💻 View Code</a>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary">🔗 Live Demo</a>
+                   <a href={project.codeLink} target="_blank" className="text-sm text-muted-foreground hover:text-primary">🔗Github</a>
                 </div>
               </div>
             </motion.div>))}
