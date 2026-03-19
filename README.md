@@ -1,73 +1,46 @@
-# Welcome to your Lovable project
+# My Portfolio
 
-## Project info
+Welcome to my portfolio! Here, you'll find a collection of my projects and skills as a Front-end Developer and UI designer
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Table of Contents
+- About Me
+- Skills
+- Projects
+- Contact
 
-## How can I edit this code?
+## About Me
+I am a Front-end Developer and a self taught Designer , sometimes I like to consider myself an artist aswell. My passion lies in creating visually appealing and user-friendly websites.
 
-There are several ways of editing your application.
+## Skills
+- Languages: HTML, CSS, JavaScript , Python
+- Frameworks/Libraries: React.js
+- Tools: Git,Figma,Canva,VS code
+- Other Skills: UI/UX design
 
-**Use Lovable**
+## Projects
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+### LMS 
+- Description: Learning Management System for students.
+- Role: Front-end Developer,UI designer
+- Technologies Used: HTML,CSS,JS,PHP,SQL,ML
+  
+### Dugra
+- Description: Female Safety app on which women can rate locations based on it's safety for women and read reviews by other users of locations they wish to visit.
+- Role: Front-end Developer,UI designer
+- Technologies Used: HTML,CSS,JS,PHP,SQL,ML
 
-Changes made via Lovable will be committed automatically to this repo.
+### SAHAAY
+- Description: A onestop platform for farmers where farmers are assisted through seed recomendation,online shopping,soil testing service and other such facilities.
+- Role: Front-end Developer,UI designer
+- Technologies Used: HTML,CSS,JS,PHP,SQL,ML
 
-**Use your preferred IDE**
+## Contact
+I'm always open to new opportunities and collaborations! Feel free to reach out to me:
+- Email: vohratanya5@gmail.com
+- LinkedIn: tanya-vohra (https://www.linkedin.com/in/tanya-vohra-57a143321/)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+Thank you for visiting my portfolio!
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
