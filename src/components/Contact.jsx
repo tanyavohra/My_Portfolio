@@ -33,7 +33,7 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
-          <motion.div initial={{ opacity: 0, x: -40 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 }} className="space-y-6">
+          
             <div className="glass rounded-3xl p-8">
               <h3 className="font-display text-2xl font-semibold mb-6">Contact Information</h3>
               <div className="space-y-4">
@@ -55,11 +55,11 @@ const Contact = () => {
               <p className="text-muted-foreground text-sm mb-4">
                 Get a copy of my resume to learn more about my experience.
               </p>
-              <a href="public/Resume-Tanya (1).pdf" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20" download>
+              <a href="/Resume-Tanya (1).pdf" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20" download>
                 Download CV
                 <ArrowUpRight className="w-4 h-4"/>
               </a>
-            </motion.div>
+       
           </motion.div>
         </div>
       </div>
