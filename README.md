@@ -19,7 +19,7 @@ I am a Front-end Developer and a self taught Designer , sometimes I like to cons
 
 ## Projects
 
-### LMS (https://github.com/tanyavohra/LMS.git)
+### LMS 
 - Description: Learning Management System for students.
 - Role: Front-end Developer,UI designer
 - Technologies Used: HTML,CSS,JS,PHP,SQL,ML
