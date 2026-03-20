@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import { Analytics } from "@vercel/analytics/react";
+
 const queryClient = new QueryClient();
 const App = () => (<HelmetProvider>
     <QueryClientProvider client={queryClient}>
