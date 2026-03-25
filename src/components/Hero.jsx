@@ -44,7 +44,7 @@ const Hero = () => {
 
             <div className="flex flex-wrap gap-4">
               <a href="#contact" className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium hover:bg-primary/90 transition-all hover:scale-105 shadow-lg shadow-primary/25">
-                Get in Touch
+                Resume
               </a>
               <a href="#projects" className="border-2 border-coral/30 text-foreground px-8 py-4 rounded-full font-medium hover:bg-coral/10 transition-all hover:scale-105">
                 View Projects
