@@ -8,6 +8,7 @@ const projects = [
     {
     title: "Scholarly Student Community",
     image:scholarly,codeLink:"https://github.com/tanyavohra/Scholarly",
+    live:"https://scholarly-taupe.vercel.app/",
     description:
       "Integrated Hugging Face API for AI-powered PDF interaction, built a community-driven Q&A system with tag-based organization, and developed a responsive UI using React.js, Node.js, Express and Python microservices.",
     tags: ["React.js", "Node.js", "AI", "Python"],
@@ -15,6 +16,7 @@ const projects = [
   {
     title: "LMS - Learning Management System",
     image:lms,codeLink:"https://github.com/tanyavohra/LMS",
+    live:"https://lms-seven-lilac.vercel.app/",
     description:
       "Worked as a Front-end Developer and designed the UI for a web-based Learning Management System for students.",
     tags: ["React", "CSS", "UI Design"],
@@ -22,6 +24,7 @@ const projects = [
   {
     title: "SAHAAY - Farmer's Helper",
     image:sahaay,codeLink:"#",
+    live:"#",
     description:
       "As a Front-end Developer, I designed a user-friendly interface for a web-based app aimed at helping farmers with weather updates and supplies.",
     tags: ["React", "CSS", "UI/UX"],
@@ -81,6 +84,7 @@ const Projects = () => {
 
                 <div className="flex gap-4 pt-3 border-t border-border">
                    <a href={project.codeLink} target="_blank" className="text-sm text-muted-foreground hover:text-primary">🔗Github</a>
+                   <a href={project.live} target="_blank" className="text-sm text-muted-foreground hover:text-primary">🖥️Live</a>
                 </div>
               </div>
             </motion.div>))}
