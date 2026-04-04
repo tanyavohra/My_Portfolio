@@ -50,13 +50,11 @@ const Skills = () => {
               <h3 className="font-display text-2xl font-semibold">Coding Skills</h3>
             </div>
 
-            <div className="space-y-6">
-              {codingSkills.map((skill, index) => (<motion.div key={skill.name} initial={{ opacity: 0, x: -20 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}>
-                  <div className="flex justify-between mb-2">
+              <div className="grid grid-cols-2 gap-4">
+                {codingSkills.map((skill, index) => (<motion.div key={skill.name} initial={{ opacity: 0, scale: 0.8 }} animate={isInView ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }} className={`${skill.bg} rounded-xl p-4 flex items-center gap-3 hover:scale-105 transition-transform border border-border/30`}>
                     <span className="font-medium">{skill.name}</span>
-                  </div>
-                </motion.div>))}
-            </div>
+                  </motion.div>))}
+              </div>
           </motion.div>
 
           {/* Software & Languages */}
