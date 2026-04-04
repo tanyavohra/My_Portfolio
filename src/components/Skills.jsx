@@ -3,12 +3,12 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code, Palette, Globe } from "lucide-react";
 const codingSkills = [
-  { name: "Computer Science Fundamentals", level: 70, color: "bg-coral" },
-   { name: "Data Structures & Algorithms", level: 80, color: "bg-coral" },
-    { name: "JS + Node.js + Express.js", level: 70, color: "bg-gold" },
-     { name: "HTML + CSS + React.js", level: 85, color: "bg-lavender" },
-        { name: "MongoDB", level: 60, color: "bg-primary" },
-    { name: "C++", level: 90, color: "bg-coral" }, 
+  { name: "Computer Science Fundamentals" },
+   { name: "Data Structures & Algorithms" },
+    { name: "JS + Node.js + Express.js"},
+     { name: "HTML + CSS + React.js" },
+        { name: "MongoDB"},
+    { name: "C++" }, 
 
 ];
 const softwareSkills = [
@@ -54,10 +54,6 @@ const Skills = () => {
               {codingSkills.map((skill, index) => (<motion.div key={skill.name} initial={{ opacity: 0, x: -20 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}>
                   <div className="flex justify-between mb-2">
                     <span className="font-medium">{skill.name}</span>
-                    <span className="text-muted-foreground">{skill.level}%</span>
-                  </div>
-                  <div className="h-3 bg-muted rounded-full overflow-hidden">
-                    <motion.div initial={{ width: 0 }} animate={isInView ? { width: `${skill.level}%` } : {}} transition={{ duration: 1, delay: 0.5 + index * 0.1 }} className={`h-full rounded-full ${skill.color}`}/>
                   </div>
                 </motion.div>))}
             </div>
