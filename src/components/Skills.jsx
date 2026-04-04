@@ -3,12 +3,16 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code, Palette, Globe } from "lucide-react";
 const codingSkills = [
-  { name: "Computer Science Fundamentals" },
-   { name: "Data Structures & Algorithms" },
-    { name: "JS + Node.js + Express.js"},
-     { name: "HTML + CSS + React.js" },
-        { name: "MongoDB"},
-    { name: "C++" }, 
+    { name: "Data Structures & Algorithms", bg: "bg-lavender/10" },
+    { name: "Computer Science Fundamentals",bg:"bg-primary/10" },
+    { name: "JavaScript",bg: "bg-coral/10",bg:"bg-coral/15" },
+    { name: "React.js",bg:"bg-gold/15"},
+    { name: "Node.js",bg: "bg-gold/10"},
+    { name: "Express.js",bg: "bg-coral/10" },
+    { name: "MongoDB",bg:"bg-coral/15"},
+    { name: "HTML",bg: "bg-gold/10" },
+    { name: "CSS",bg:"bg-primary/10"}, 
+    { name: "C++" , bg: "bg-lavender/10"}, 
 
 ];
 const softwareSkills = [
